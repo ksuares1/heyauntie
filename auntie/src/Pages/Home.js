@@ -1,4 +1,4 @@
-import Toolbar from "../components/Navbar";
+import Toolbar from "../components/Navbar.js";
 import Homepage from "../components/Homepage";
 
 
