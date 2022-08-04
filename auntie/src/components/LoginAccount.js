@@ -3,6 +3,7 @@ import React, { useState } from "react";
 
 function LoginView() {
   // React States
+
   const [errorMessages, setErrorMessages] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -80,6 +81,7 @@ function LoginView() {
         {isSubmitted ? <div>User is successfully logged in</div> : renderForm}
       </div>
     </div>
+ 
   );
 }
 

@@ -47,6 +47,10 @@
   align-items: center;
 }
 
+
+.app{
+  background-image: url("../src/assets/img/profile.png");
+}
 .text-container{
   display: flex;
   flex-direction: column;
