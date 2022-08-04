@@ -1,7 +1,7 @@
 import { TextField, LinearProgress, FormHelperText } from '@material-ui/core'
 import { useState } from 'react'
 import { useDispatch } from 'react-redux'
-import { useHistory } from 'react-router'
+import { useHistory } from 'react-router-dom'
 import { BACKEND_URL } from '../_constants'
 
 export function CreateAccountView() {

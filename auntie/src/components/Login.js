@@ -2,7 +2,7 @@
 import { TextField, LinearProgress, FormHelperText } from '@material-ui/core'
 import { useState } from 'react'
 import { useDispatch } from 'react-redux'
-import { useHistory } from 'react-router'
+import { useHistory } from 'react-router-dom'
 import { BACKEND_URL } from '../_constants'
 
 export function LoginView() {
@@ -43,7 +43,7 @@ export function LoginView() {
                         <LinearProgress className="progress" />
                     }
                     <div className="card-header">
-                        <img src="" alt="heyauntie-log"/>
+                        <img src={require("../assets/img/blue-logo.png")} alt="heyauntie-log"/>
                         <h1>HackerMail</h1>
                     </div>
                     <div style={{ padding: '4%', display: 'flex', flexDirection: 'column' }}>
