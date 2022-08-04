@@ -19,7 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
          {/* <Route path="/approuter" element={<AppRouter/>}/>  */}
-          <Route path="/loginaccount" element={<AccountPage/>} />
+          <Route path="/login" element={<LoginAccount/>}/>
           <Route path="/survey" element={<Questions />} />
           <Route path="/dashboard" element={<DiscussionBoard />} />
           <Route path="/profilemain" element={<MainProfile />} />
