@@ -1,12 +1,12 @@
 import { TextField, LinearProgress, FormHelperText } from '@material-ui/core'
 import { useState } from 'react'
 import { useDispatch } from 'react-redux'
-import { useHistory } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { BACKEND_URL } from '../_constants'
 
 export function CreateAccountView() {
 
-    const history = useHistory()
+    const navigate = useNavigate()
     const dispatch = useDispatch()
 
     const [name, setName] = useState('')
@@ -91,7 +91,7 @@ export function CreateAccountView() {
                                 {error.message}
                             </FormHelperText>
                         }
-                        <button className="link" disabled={status !== null} onClick={() => history.push('/login')}>
+                        <button className="link" disabled={status !== null} onClick={() => navigate.push('/login')}>
                             Already have an account?
                         </button>
                         <button className="action" disabled={status !== null} onClick={createAccount}>
