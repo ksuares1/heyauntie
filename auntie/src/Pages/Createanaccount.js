@@ -1,10 +1,10 @@
-import CreateAccount from "../components/CreateAccount";
+import CreateAccountView from "../components/CreateAccount";
 
 
 const Account=() =>{
     return(
         <>
-        <CreateAccount/>
+        <CreateAccountView/>
         </>
     )
 }

@@ -10,12 +10,12 @@ function LoginView() {
   // User Login info
   const database = [
     {
-      username: "user1",
-      password: "pass1"
+      username: "Auntie",
+      password: "Today2!"
     },
     {
-      username: "user2",
-      password: "pass2"
+      username: "Auntee",
+      password: "Hello1!"
     }
   ];
 
@@ -78,7 +78,7 @@ function LoginView() {
     <div className="app">
       <div className="login-form">
         <div className="title">Sign In</div>
-        {isSubmitted ? <div>User is successfully logged in</div> : renderForm}
+        {isSubmitted ? <div>You've successfully logged in</div> : renderForm}
       </div>
     </div>
  
