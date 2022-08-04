@@ -11,7 +11,7 @@ const Survey = () => {
         
         <div class="survey-btn">
     <PopupButton id="pSdmmaef" style={{ fontSize: 20 }} className="my-button">
-      Click to open Survey in popup
+      Click to start Survey
     </PopupButton>
     </div>
     </div>

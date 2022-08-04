@@ -2,12 +2,12 @@
 import { TextField, LinearProgress, FormHelperText } from '@material-ui/core'
 import { useState } from 'react'
 import { useDispatch } from 'react-redux'
-import { useHistory } from 'react-router-dom'
-import { BACKEND_URL } from '../_constants'
+import { useNavigate } from "react-router-dom"
+import { BACKEND_URL } from './_constant'
 
 export function LoginView() {
 
-    const history = useHistory()
+    const navigate= useNavigate()
     const dispatch = useDispatch()
 
     const [username, setUsername] = useState('')
@@ -42,9 +42,9 @@ export function LoginView() {
                     {status === 'pending' &&
                         <LinearProgress className="progress" />
                     }
-                    <div className="card-header">
+                    <div className="profile-img">
                         <img src={require("../assets/img/blue-logo.png")} alt="heyauntie-log"/>
-                        <h1>HackerMail</h1>
+                        <h1>Heyauntie</h1>
                     </div>
                     <div style={{ padding: '4%', display: 'flex', flexDirection: 'column' }}>
                         <TextField
@@ -78,7 +78,7 @@ export function LoginView() {
                                 {error.message}
                             </FormHelperText>
                         }
-                        <button className="link" disabled={status !== null} onClick={() => history.push('/create-account')}>
+                        <button className="link" disabled={status !== null} onClick={() => navigate.push('/create-account')}>
                             Create Account
                         </button>
                         <button className="action" disabled={status !== null} onClick={login}>
