@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import Toolbar from "./Navbar";
 
 function LoginView() {
   // React States
@@ -72,16 +72,19 @@ function LoginView() {
         </div>
       </form>
     </div>
+  
   );
 
   return (
-    <div className="app">
+    <div className="app login-bg">
+      <Toolbar/>
+      <div></div>
       <div className="login-form">
         <div className="title">Sign In</div>
         {isSubmitted ? <div>You've successfully logged in</div> : renderForm}
       </div>
     </div>
- 
+    
   );
 }
 

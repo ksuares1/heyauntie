@@ -48,8 +48,14 @@
 }
 
 
-.app{
+.login-bg{
   background-image: url("../src/assets/img/profile.png");
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.app{
+  text-align: center;
 }
 .text-container{
   display: flex;

@@ -8,7 +8,7 @@ import MainProfile from './components/Profilemain';
 import Questions from './Pages/Questions';
 import Auntee from './Pages/Auntee';
 import LoginAccount from './Pages/AccountPage';
-// import CreateAccountView from './Pages/Account'
+import CreateAccount from './Pages/Createanaccount';
 
 
 
@@ -19,7 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
          {/* <Route path="/approuter" element={<AppRouter/>}/>  */}
-         {/* <Route path="/" element={<LoginAccount/>}/> */}
+          <Route path="/createaccount" element={<CreateAccount/>}/> 
           <Route path="/login" element={<LoginAccount/>}/>
           <Route path="/survey" element={<Questions />} />
           <Route path="/dashboard" element={<DiscussionBoard />} />

@@ -1,5 +1,6 @@
 import { PopupButton } from '@typeform/embed-react'
 import Toolbar from './Navbar';
+import Button from 'react-bootstrap/Button';
 
 
 
@@ -13,6 +14,11 @@ const Survey = () => {
     <PopupButton id="pSdmmaef" style={{ fontSize: 20 }} className="my-button">
       Click to start Survey
     </PopupButton>
+    <div>
+    <a href="/createaccount">
+    <Button variant="outline-secondary">Sign Up</Button>
+    </a>
+    </div>
     </div>
     </div>
     

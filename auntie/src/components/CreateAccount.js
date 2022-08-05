@@ -4,7 +4,8 @@ import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { BACKEND_URL } from '../components/_constant'
 
-export function CreateAccountView() {
+
+const CreateAccountView=()=> {
 
     const navigate = useNavigate()
     const dispatch = useDispatch()
@@ -103,3 +104,5 @@ export function CreateAccountView() {
         </div>
     )
 }
+
+export default CreateAccountView;
