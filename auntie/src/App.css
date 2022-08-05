@@ -246,13 +246,17 @@ auntee-profile{
 
 
 .form{
+  display: flex;
+  justify-content: center;
+  padding:10%;
+}
+
+.nav-bg{
   background-image: url("../src/assets/img/questions-bkg.png");
   background-size: cover;
   min-height: 100vh;
   background-repeat: no-repeat;
 }
-
-
 
 @media screen and (max-width: 550px) {
   .loginBox {

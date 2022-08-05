@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import Toolbar from './Navbar';
 function RegistrationForm() {
     
     const [firstName, setFirstName] = useState(null);
@@ -32,7 +33,11 @@ function RegistrationForm() {
     }
 
     return(
+        <div class="nav-bg">
+        <Toolbar/>
+        
         <div className="form">
+            
             <div className="form-body">
                 <div className="username">
                     <label className="form__label" for="firstName">First Name </label>
@@ -58,6 +63,7 @@ function RegistrationForm() {
             <div class="footer">
                 <button onClick={()=>handleSubmit()} type="submit" class="btn">Register</button>
             </div>
+        </div>
         </div>
        
     )       
