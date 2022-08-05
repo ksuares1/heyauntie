@@ -1,5 +1,14 @@
 import React, {useState} from 'react';
 import Toolbar from './Navbar';
+import {database} from '../components/Firebase';
+import {ref,push,child,update} from "firebase/database";
+
+
+
+
+
+
+
 function RegistrationForm() {
     
     const [firstName, setFirstName] = useState(null);
@@ -29,8 +38,20 @@ function RegistrationForm() {
     }
 
     const handleSubmit  = () => {
-        console.log(firstName,lastName,email,password,confirmPassword);
+        let obj = {
+            firstName : firstName,
+            lastName:lastName,
+            email:email,
+            password:password,
+            confirmPassword:confirmPassword,
+        }       
+    const newPostKey = push(child(ref(database), 'posts')).key;
+    const updates = {};
+    updates['/' + newPostKey] = obj
+    return update(ref(database), updates);
     }
+        // console.log(firstName,lastName,email,password,confirmPassword);
+    
 
     return(
         <div class="nav-bg">
@@ -66,7 +87,9 @@ function RegistrationForm() {
             </div>
             <br/>
             <div class="footer">
+                <a href="/dashboard">
                 <button onClick={()=>handleSubmit()} type="submit" class="register-btn">Register</button>
+                </a>
             </div>
         </div>
         </div>
