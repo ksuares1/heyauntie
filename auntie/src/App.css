@@ -54,6 +54,12 @@
   min-height: 100vh;
 }
 
+.login-title{
+  font-family:Bely;
+  font-size:50px;
+  text-align:center;
+  font-weight:bold;
+}
 .app{
   text-align: center;
 }

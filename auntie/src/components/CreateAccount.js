@@ -1,108 +1,100 @@
-import { TextField, LinearProgress, FormHelperText } from '@material-ui/core'
-import { useState } from 'react'
-import { useDispatch } from 'react-redux'
-import { useNavigate } from 'react-router-dom'
-import { BACKEND_URL } from '../components/_constant'
+import { useState } from 'react';
+export default function Form() {
 
+// States for registration
+const [name, setName] = useState('');
+const [email, setEmail] = useState('');
+const [password, setPassword] = useState('');
 
-const CreateAccountView=()=> {
+// States for checking the errors
+const [submitted, setSubmitted] = useState(false);
+const [error, setError] = useState(false);
 
-    const navigate = useNavigate()
-    const dispatch = useDispatch()
+// Handling the name change
+const handleName = (e) => {
+setName(e.target.value);
+setSubmitted(false);
+};
 
-    const [name, setName] = useState('')
-    const [username, setUsername] = useState('')
-    const [password, setPassword] = useState('')
-    const [status, setStatus] = useState(null)
-    const [error, setError] = useState(null)
+// Handling the email change
+const handleEmail = (e) => {
+setEmail(e.target.value);
+setSubmitted(false);
+};
 
-    async function createAccount() {
-        setStatus('pending')
-        let response = await fetch(`${BACKEND_URL}/users`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ name, username, password })
-        })
-        let result = await response.json()
-        if (result.error) {
-            setStatus(null)
-            setError(result.error)
-        } else {
-            setStatus('success')
-            localStorage.setItem('token', result.token)
-            dispatch({ type: 'LOGIN', user: result.user })
-        }
-    }
+// Handling the password change
+const handlePassword = (e) => {
+setPassword(e.target.value);
+setSubmitted(false);
+};
 
-    return (
-        <div style={{ flex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-            <div style={{ flex: 1, maxWidth: 500 }}>
-                <div className="card">
-                    {status === 'pending' &&
-                        <LinearProgress className="progress" />
-                    }
-                    <div className="card-header">
-                        <img src={require("../assets/img/pink-logo.png")}alt="heyauntie-logo"/>
-                        <h1>Create an Account</h1>
-                    </div>
-                    <div style={{ padding: '4%',  display: 'flex', flexDirection: 'column' }}>
-                        <TextField
-                            error={error?.name?.message}
-                            helperText={error?.name?.message}
-                            disabled={status !== null}
-                            style={{ marginBottom: '4%' }}
-                            value={name}
-                            onChange={e => setName(e.target.value)}
-                            id="name"
-                            label="Name"
-                            variant="filled"
-                            fullWidth={true}
-                            input-box="outlined"
-                        />
-                        <TextField
-                            error={error?.username?.message}
-                            helperText={error?.username?.message}
-                            disabled={status !== null}
-                            style={{ marginBottom: '4%' }}
-                            value={username}
-                            onChange={e => setUsername(e.target.value)}
-                            id="username"
-                            label="Username"
-                            variant="filled"
-                            fullWidth={true}
-                            input="outlined"
-                        />
-                        <TextField
-                            error={error?.password?.message}
-                            helperText={error?.password?.message}
-                            value={password}
-                            disabled={status !== null}
-                            onChange={e => setPassword(e.target.value)}
-                            type="password"
-                            id="password"
-                            label="Password"
-                            variant="filled"
-                            fullWidth={true}
-                            input-field="outlined"
-                        />
-                        {error?.message &&
-                            <FormHelperText error={true}>
-                                {error.message}
-                            </FormHelperText>
-                        }
-                        <button className="link" disabled={status !== null} onClick={() => navigate.push('/login')}>
-                            Already have an account?
-                        </button>
-                        <button className="action" disabled={status !== null} onClick={createAccount}>
-                            Create
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    )
+// Handling the form submission
+const handleSubmit = (e) => {
+e.preventDefault();
+if (name === '' || email === '' || password === '') {
+setError(true);
+} else {
+setSubmitted(true);
+setError(false);
 }
+};
 
-export default CreateAccountView;
+// Showing success message
+const successMessage = () => {
+return (
+<div
+className="success"
+style={{
+display: submitted ? '' : 'none',
+}}>
+<h1>User {name} successfully registered!!</h1>
+</div>
+);
+};
+
+// Showing error message if error is true
+const errorMessage = () => {
+return (
+<div
+className="error"
+style={{
+display: error ? '' : 'none',
+}}>
+<h1>Please enter all the fields</h1>
+</div>
+);
+};
+
+return (
+<div className="form">
+<div>
+<h1>User Registration</h1>
+</div>
+
+{/* Calling to the methods */}
+<div className="messages">
+{errorMessage()}
+{successMessage()}
+</div>
+
+<form>
+{/* Labels and inputs for form data */}
+<label className="label">Name</label>
+<input onChange={handleName} className="input"
+value={name} type="text" />
+
+<label className="label">Email</label>
+<input onChange={handleEmail} className="input"
+value={email} type="email" />
+
+<label className="label">Password</label>
+<input onChange={handlePassword} className="input"
+value={password} type="password" />
+
+<button onClick={handleSubmit} className="btn" type="submit">
+Submit
+</button>
+</form>
+</div>
+);
+}

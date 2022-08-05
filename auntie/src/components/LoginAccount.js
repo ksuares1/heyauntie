@@ -80,7 +80,7 @@ function LoginView() {
       <Toolbar/>
       <div></div>
       <div className="login-form">
-        <div className="title">Sign In</div>
+        <div className="title login-title">Login</div>
         {isSubmitted ? <div>You've successfully logged in</div> : renderForm}
       </div>
     </div>
