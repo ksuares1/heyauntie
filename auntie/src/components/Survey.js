@@ -16,7 +16,7 @@ const Survey = () => {
     </PopupButton>
     <div>
     <a href="/registrationform">
-    <Button variant="outline-secondary">Sign Up</Button>
+    <Button variant="secondary">Sign Up</Button>{' '}
     </a>
     </div>
     </div>
