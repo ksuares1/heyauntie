@@ -28,7 +28,7 @@ function Toolbar() {
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   <Nav.Link href="/">Home</Nav.Link>
                   <Nav.Link href="/login">Login </Nav.Link>
-                  <Nav.Link href="/survey">Sign Up </Nav.Link>
+                  <Nav.Link href="/registrationform">Sign Up </Nav.Link>
                   <Nav.Link href="/profilemain">Profile</Nav.Link>
                   <Nav.Link href="/profilemain">Donate</Nav.Link>
                   
