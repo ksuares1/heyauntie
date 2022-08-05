@@ -219,6 +219,9 @@ padding:30px;
   background-repeat: no-repeat;
 }
 
+.my-button{
+  border-radius:8px;
+}
 .survey-btn{
   padding:350px;
   display:flex;
