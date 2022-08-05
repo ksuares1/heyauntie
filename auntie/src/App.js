@@ -8,8 +8,7 @@ import MainProfile from './components/Profilemain';
 import Questions from './Pages/Questions';
 import Auntee from './Pages/Auntee';
 import LoginAccount from './Pages/AccountPage';
-import CreateAccount from './Pages/Createanaccount';
-
+import SignUpForm from './Pages/Createanaccount';
 
 
 function App() {
@@ -18,8 +17,7 @@ function App() {
        <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-         {/* <Route path="/approuter" element={<AppRouter/>}/>  */}
-          <Route path="/createaccount" element={<CreateAccount/>}/> 
+          <Route path="/registrationform" element={<SignUpForm/>}/> 
           <Route path="/login" element={<LoginAccount/>}/>
           <Route path="/survey" element={<Questions />} />
           <Route path="/dashboard" element={<DiscussionBoard />} />
