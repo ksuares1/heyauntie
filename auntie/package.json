@@ -15,6 +15,7 @@
     "@typeform/embed-react": "^1.18.0",
     "bootstrap": "^5.2.0",
     "concurrently": "^7.3.0",
+    "firebase": "^9.9.2",
     "fontawesome": "^5.6.3",
     "react": "^18.2.0",
     "react-bootstrap": "^2.4.0",
