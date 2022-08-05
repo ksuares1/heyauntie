@@ -9,7 +9,7 @@ import Questions from './Pages/Questions';
 import Auntee from './Pages/Auntee';
 import LoginAccount from './Pages/AccountPage';
 import SignUpForm from './Pages/Createanaccount';
-
+import DirectMessaging from './components/DirectMessaging';
 
 function App() {
   return (
@@ -18,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/registrationform" element={<SignUpForm/>}/> 
+          <Route path="/directmessaging" element={<DirectMessaging/>}/>
           <Route path="/login" element={<LoginAccount/>}/>
           <Route path="/survey" element={<Questions />} />
           <Route path="/dashboard" element={<DiscussionBoard />} />

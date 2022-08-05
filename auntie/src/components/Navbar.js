@@ -30,6 +30,8 @@ function Toolbar() {
                   <Nav.Link href="/login">Login </Nav.Link>
                   <Nav.Link href="/registrationform">Sign Up </Nav.Link>
                   <Nav.Link href="/profilemain">Profile</Nav.Link>
+                  <Nav.Link href="/dashboard">Dashboard</Nav.Link>
+                  <Nav.Link href="/directmessaging">Auntee Messages</Nav.Link>
                   <Nav.Link href="/profilemain">Donate</Nav.Link>
                   
                   <NavDropdown
