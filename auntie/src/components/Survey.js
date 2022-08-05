@@ -15,7 +15,7 @@ const Survey = () => {
       Click to start Survey
     </PopupButton>
     <div>
-    <a href="/createaccount">
+    <a href="/registrationform">
     <Button variant="outline-secondary">Sign Up</Button>
     </a>
     </div>
