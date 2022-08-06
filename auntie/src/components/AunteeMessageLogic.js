@@ -1,11 +1,11 @@
 // import Toolbar from './Navbar';
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useCollectionData} from 'react';
 import 'firebase/compat/firestore';
 import firebase from 'firebase/compat/app';
 import 'firebase/auth';
+import {initializeApp} from 'firebase/app';
 
-
-firebase.initializeApp({
+const firebaseConfig=({
     apiKey: "AIzaSyCN1i_GNHrOwhPdyEDEdZlrMIobsoMAINI",
     authDomain: "aunteechat.firebaseapp.com",
     projectId: "aunteechat",
@@ -13,11 +13,13 @@ firebase.initializeApp({
     messagingSenderId: "593776508015",
     appId: "1:593776508015:web:774e0384dffc9509d2e19a",
     measurementId: "G-YLCMXCY3NL"
-  })
+  });
+
+  initializeApp(firebaseConfig);
   
   
-const auth = firebase.auth();
-const firestore = firebase.firestore();
+export const auth = firebase.auth();
+ export const firestore = firebase.firestore();
 
 const AunteeMessageLogic=() => {
 

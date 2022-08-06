@@ -15,7 +15,6 @@
     "@typeform/embed-react": "^1.18.0",
     "axios": "^0.27.2",
     "bootstrap": "^5.2.0",
-    "chat-engine": "^0.9.21",
     "concurrently": "^7.3.0",
     "firebase": "^9.9.2",
     "fontawesome": "^5.6.3",

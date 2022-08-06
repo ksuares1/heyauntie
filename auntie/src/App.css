@@ -241,13 +241,14 @@ padding:30px;
 }
 
 
-auntee-profile{
-  display: flex;
-  flex-direction: column;
+
+
+auntee-pic{
+  /* display: flex;
+  flex-direction:column; */
+  width:25px;
+  height:15%;
 }
-
-
-
 
 
 .form{
@@ -278,6 +279,12 @@ auntee-profile{
   min-height: 100vh;
   background-repeat: no-repeat;
 }
+
+
+
+
+
+
 
 @media screen and (max-width: 550px) {
   .loginBox {

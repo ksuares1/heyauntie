@@ -6,9 +6,6 @@ import {ref,push,child,update} from "firebase/database";
 
 
 
-
-
-
 function RegistrationForm() {
     
     const [firstName, setFirstName] = useState(null);

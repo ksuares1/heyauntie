@@ -8,7 +8,7 @@ import Questions from './Pages/Questions';
 // import DirectMessaging from './Pages/AunteeMessages';
 import LoginAccount from './Pages/AccountPage';
 import SignUpForm from './Pages/Createanaccount';
-import AunteeMessages from './Pages/AunteeMessages';
+import AunteeChatMessage from './Pages/AunteeChat';
 
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/registrationform" element={<SignUpForm/>}/> 
           {/* <Route path="/directmessaging" element={<DirectMessaging/>}/> */}
-          <Route path="/aunteechat" element={<AunteeMessages/>}/>
+          <Route path="/aunteechat" element={<AunteeChatMessage/>}/>
           <Route path="/login" element={<LoginAccount/>}/>
           <Route path="/survey" element={<Questions />} />
           <Route path="/dashboard" element={<DiscussionBoard />} />
