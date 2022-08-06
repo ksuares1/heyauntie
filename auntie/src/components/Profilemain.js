@@ -11,7 +11,7 @@ const MainProfile=() =>{
             <h1 class="ladies-question" >Ask a Question</h1>
             <div class="auntie-links">
                 <a href="/auntie"><h3 class="identify-auntie">I'm an Auntie</h3></a>
-                <a href="/directmessaging">
+                <a href="/aunteechat">
                 <h3 class="identify-auntee">I'm an Auntee</h3>
                  </a>
                  </div>  

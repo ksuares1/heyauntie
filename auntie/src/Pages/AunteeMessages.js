@@ -1,9 +1,12 @@
-import DirectMessaging from "../components/DirectMessaging";
+// import DirectMessaging from "../components/DirectMessaging";
+import AunteeChat from "../components/Chat";
+
 
 const AunteeMessages=()=>{
     return(
         <>
-        <DirectMessaging/>
+        <AunteeChat/>
+        {/* <DirectMessaging/> */}
         </>
     )
 }
