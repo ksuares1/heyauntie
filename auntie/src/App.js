@@ -18,8 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/registrationform" element={<SignUpForm/>}/> 
-          {/* <Route path="/directmessaging" element={<DirectMessaging/>}/> */}
-          <Route path="/aunteechat" element={<AunteeChatMessage/>}/>
+          <Route path="/aunteechat" element={<AunteeChatMessage/>}/> 
           <Route path="/login" element={<LoginAccount/>}/>
           <Route path="/survey" element={<Questions />} />
           <Route path="/dashboard" element={<DiscussionBoard />} />
