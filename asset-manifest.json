@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/heyauntie/static/css/main.bd28fb31.css",
+    "main.js": "/heyauntie/static/js/main.878c0dee.js",
+    "static/js/787.643acd73.chunk.js": "/heyauntie/static/js/787.643acd73.chunk.js",
+    "static/media/questions-bkg.png": "/heyauntie/static/media/questions-bkg.5474d14878580934b466.png",
+    "static/media/profile.png": "/heyauntie/static/media/profile.f1352f1bc396094f5152.png",
+    "static/media/home-bk.png": "/heyauntie/static/media/home-bk.4d1720b970d5f3af3e32.png",
+    "static/media/heyauntie-ladies.png": "/heyauntie/static/media/heyauntie-ladies.f4797cc40154a806003a.png",
+    "static/media/ladies-discuss.png": "/heyauntie/static/media/ladies-discuss.91258386d23d7772f75e.png",
+    "static/media/blue-logo.png": "/heyauntie/static/media/blue-logo.b59ce5ee3f97b11896e7.png",
+    "static/media/pink-logo.png": "/heyauntie/static/media/pink-logo.77a02826afed5bc35cef.png",
+    "index.html": "/heyauntie/index.html",
+    "main.bd28fb31.css.map": "/heyauntie/static/css/main.bd28fb31.css.map",
+    "main.878c0dee.js.map": "/heyauntie/static/js/main.878c0dee.js.map",
+    "787.643acd73.chunk.js.map": "/heyauntie/static/js/787.643acd73.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bd28fb31.css",
+    "static/js/main.878c0dee.js"
+  ]
+}
