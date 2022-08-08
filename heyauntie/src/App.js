@@ -9,6 +9,7 @@ import Questions from './Pages/Questions';
 import LoginAccount from './Pages/AccountPage';
 import SignUpForm from './Pages/Createanaccount';
 import AunteeChatMessage from './Pages/AunteeChat';
+import CommunityLounge from './Pages/CommunityChat';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/registrationform" element={<SignUpForm/>}/> 
           <Route path="/aunteechat" element={<AunteeChatMessage/>}/> 
+          <Route path="/communitylounge" element={<CommunityLounge/>}/>
           <Route path="/login" element={<LoginAccount/>}/>
           <Route path="/survey" element={<Questions />} />
           <Route path="/dashboard" element={<DiscussionBoard />} />
