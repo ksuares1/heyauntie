@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Toolbar from './Navbar';
-import {database} from '../components/Firebase';
+import {database} from './Firebase';
 import {ref,push,child,update} from "firebase/database";
 
 
