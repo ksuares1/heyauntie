@@ -1,19 +1,27 @@
 import React, { useRef, useState } from 'react';
-
-import firebase from 'firebase/app';
-import 'firebase/firestore';
-import 'firebase/auth';
+import 'firebase/compat/firestore';
+import 'firebase/compat/auth';
+import firebase from 'firebase/compat/app';
 
 
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
+firebase.initializeApp = {
+        apiKey: "AIzaSyCl3KAqI-QWvGcJWtE08Qufqci6QrQ2hVk",
+        authDomain: "communitylounge-4151a.firebaseapp.com",
+        databaseURL: "https://communitylounge-4151a-default-rtdb.firebaseio.com",
+        projectId: "communitylounge-4151a",
+        storageBucket: "communitylounge-4151a.appspot.com",
+        messagingSenderId: "259143495904",
+        appId: "1:259143495904:web:ede5ffba12569dd17be085",
+        measurementId: "G-MDW6Y5CGB1"
+};
 
-firebase.initializeApp({
-    // your config
-  })
 
-  const auth = firebase.auth();
+
+
+const auth = firebase.auth();
 const firestore = firebase.firestore();
 ;
 
