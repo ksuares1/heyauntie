@@ -1,6 +1,6 @@
 import React from "react";
 import { Navigate } from "react-router-dom";
-import chat from "../components/lib/chat";
+import chat from "./Chat";
 // import spinner from "../logo.svg";
 
 
@@ -59,7 +59,7 @@ class CommunityLogin extends React.Component {
       return (
         <Navigate
           to={{
-            pathname: "/communitylounge",
+            pathname: "/chat",
             state: { user: this.state.user }
           }}
         />

@@ -1,6 +1,6 @@
 import React from "react";
-import { Redirect } from "react-router-dom";
-import chat from "../lib/chat";
+import { Navigate } from "react-router-dom";
+import chat from "../components/Chat";
 import config from "./config";
 
 class Groupchat extends React.Component {
@@ -88,7 +88,7 @@ class Groupchat extends React.Component {
   render() {
     const { isAuthenticated } = this.state;
     if (!isAuthenticated) {
-      return <Redirect to="/" />;
+      return <Navigate to="/" />;
     }
     return (
       <div className="chatWindow">

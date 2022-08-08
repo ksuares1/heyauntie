@@ -1,5 +1,5 @@
 import { CometChat } from "@cometchat-pro/chat";
-import config from "../config";
+import config from "./config";
 
 export default class CCManager {
   static LISTENER_KEY_MESSAGE = "msglistener";
