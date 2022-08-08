@@ -1,7 +1,7 @@
 import React from "react";
 import { Navigate } from "react-router-dom";
 import chat from "../components/Chat";
-import config from "./config";
+import config from "../components/config";
 
 class Groupchat extends React.Component {
   constructor(props) {
@@ -82,7 +82,7 @@ class Groupchat extends React.Component {
   componentDidMount() {
     this.getUser();
     this.messageListener();
-    // chat.joinGroup(this.GUID)
+    chat.joinGroup(this.GUID)
   }
 
   render() {

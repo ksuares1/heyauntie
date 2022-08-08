@@ -1,7 +1,7 @@
 import React from "react";
 import { Navigate } from "react-router-dom";
 import chat from "./Chat";
-// import spinner from "../logo.svg";
+
 
 
 class CommunityLogin extends React.Component {
@@ -67,22 +67,26 @@ class CommunityLogin extends React.Component {
     }
 
     return (
+      <div class="community-bg">
       <div className="App">
-        <h1>COMET CHAT</h1>
+        <h1 class="community-header">Community Lounge</h1>
+        <br/>
         <p>Create an account through your CometChat dashboard or login with one of our test users, superhero1, superhero2, etc.</p>
         <form className="form" onSubmit={this.onSubmit}>
           <input onChange={this.handleInputChange} type="text" />
           <span className="error">{this.state.errorMessage}</span>
-          {/* {this.state.isSubmitting ? (
-            <img src={spinner} alt="Spinner component" className="App-logo" />
-          ) : ( */}
+           {this.state.isSubmitting ? (
+            // <img src={spinner} alt="Spinner component" className="App-logo" />
+            <p>Please write your message!</p>
+          ) : ( 
             <input
               type="submit"
               disabled={this.state.username === ""}
               value="LOGIN"
             />
-          {/* )} */}
+          )} 
         </form>
+      </div>
       </div>
     );
   }
