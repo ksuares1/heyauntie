@@ -1,14 +1,14 @@
-import AunteeChatMessage from "../components/Auntee";
+// import AunteeChatMessage from "../components/Auntee";
 
 
 
-const AunteeChat=() =>{ 
-    return(
-        <>
-        <AunteeChatMessage/>
+// const AunteeChat=() =>{ 
+//     return(
+//         <>
+//         <AunteeChatMessage/>
         
-        </>
-    )
-}
+//         </>
+//     )
+// }
 
-export default AunteeChat;
+// export default AunteeChat;

@@ -1,10 +1,10 @@
-import CommunityLounge from "../components/CommunityLounge";
+import CommunityLogin from "../components/CommunityLounge";
 
 
 const CommunityPage =() =>{
     return(
         <>
-        <CommunityLounge/>
+        <CommunityLogin/>
         </>
     )
 }
