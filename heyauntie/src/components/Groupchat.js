@@ -19,19 +19,24 @@ class Groupchat extends React.Component {
   }
 
   sendMessage = () => {
+    console.log('guid==>>', this.GUID, 'ggggg==>>', this.state.messageText);
     chat.sendGroupMessage(this.GUID, this.state.messageText).then(
       message => {
+        console.log('msgg==>>', message);
         console.log("Message sent successfully:", message);
         this.setState({ messageText: null });
       },
       error => {
-        if (error.code === "ERR_NOT_A_MEMBER") {
+        console.log('errseee==>>', error);
+        /*if (error.code === "ERR_NOT_A_MEMBER") {
           chat.joinGroup(this.GUID).then(response => {
             this.sendMessage();
           });
-        }
+        }*/
       }
-    );
+    ).catch(errr => {
+      console.log('errseee in cacth==>>', errr);
+    });
   };
 
   scrollToBottom = () => {
@@ -51,9 +56,11 @@ class Groupchat extends React.Component {
 
   getUser = () => {
     chat
-      .getLoggedinUser()
+    .init().then(hey => {
+      console.log('heyyy==>>', hey);
+      chat.getLoggedinUser()
       .then(user => {
-        console.log("user details:", { user });
+        console.log("user details:", { user:"auntee" });
         this.setState({ user });
       })
       .catch(({ error }) => {
@@ -62,7 +69,10 @@ class Groupchat extends React.Component {
             isAuthenticated: false
           });
         }
-      });
+      });      
+    }).catch(err => {
+      console.log('dhjdkshsj==>>', err);
+    });
   };
 
   messageListener = () => {
@@ -81,8 +91,8 @@ class Groupchat extends React.Component {
 
   componentDidMount() {
     this.getUser();
-    this.messageListener();
-    chat.joinGroup(this.GUID)
+    //this.messageListener();
+    //chat.joinGroup(this.GUID)
   }
 
   render() {

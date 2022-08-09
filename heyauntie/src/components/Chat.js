@@ -9,7 +9,8 @@ export default class CCManager {
   static LISTENER_KEY_GROUP = "grouplistener";
 
   static init() {
-    return CometChat.init(CCManager.appId);
+    const appSetting = new CometChat.AppSettingsBuilder().subscribePresenceForAllUsers().setRegion('us').build();
+    return CometChat.init(CCManager.appId, appSetting);
   }
 
   static getTextMessage(uid, text, msgType) {
@@ -17,14 +18,14 @@ export default class CCManager {
       return new CometChat.TextMessage(
         uid,
         text,
-        CometChat.MESSAGE_TYPE.TEXT,
+        //CometChat.MESSAGE_TYPE.TEXT,
         CometChat.RECEIVER_TYPE.USER
       );
     } else {
       return new CometChat.TextMessage(
         uid,
         text,
-        CometChat.MESSAGE_TYPE.TEXT,
+        //CometChat.MESSAGE_TYPE.TEXT,
         CometChat.RECEIVER_TYPE.GROUP
       );
     }
@@ -51,6 +52,7 @@ export default class CCManager {
 
   static sendGroupMessage(UID, message) {
     const textMessage = this.getTextMessage(UID, message, "group");
+    console.log('msggg=>>', textMessage)
     return CometChat.sendMessage(textMessage);
   }
 
