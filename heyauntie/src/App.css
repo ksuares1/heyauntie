@@ -294,6 +294,11 @@ auntee-pic{
   font-weight:bold;
 }
 
+
+.community-directions{
+  font-size:18px;
+}
+
 @media screen and (max-width: 550px) {
   .loginBox {
     width: 85%;

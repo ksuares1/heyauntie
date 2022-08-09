@@ -72,7 +72,8 @@ class CommunityLogin extends React.Component {
         <Toolbar/>
         <h1 class="community-header">Community Lounge</h1>
         <br/>
-        <p>Create an account through your CometChat dashboard or login with one of our test users, superhero1, superhero2, etc.</p>
+        <p class="community-directions">Please let us know in the input field, if you're <b>auntee </b>or <b>auntie</b> based on your <em>survey</em> results. </p>
+        
         <form className="form" onSubmit={this.onSubmit}>
           <input onChange={this.handleInputChange} type="text" />
           <span className="error">{this.state.errorMessage}</span>

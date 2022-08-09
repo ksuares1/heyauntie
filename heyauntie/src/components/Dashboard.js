@@ -12,7 +12,7 @@ function Dashboard() {
           <Nav className="me-auto">
             <Nav.Link href="#home">Auntie House Rules</Nav.Link>
             <Nav.Link href="/profilemain">Auntie Group</Nav.Link>
-            <Nav.Link href="#">Community Lounge</Nav.Link>
+            <Nav.Link href="/communitylounge">Community Lounge</Nav.Link>
             <Nav.Link href="/messages">Inbox</Nav.Link>
         
           </Nav>
