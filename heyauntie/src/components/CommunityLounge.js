@@ -1,7 +1,7 @@
 import React from "react";
 import { Navigate } from "react-router-dom";
 import chat from "./Chat";
-
+import Toolbar from "./Navbar";
 
 
 class CommunityLogin extends React.Component {
@@ -69,6 +69,7 @@ class CommunityLogin extends React.Component {
     return (
       <div class="community-bg">
       <div className="App">
+        <Toolbar/>
         <h1 class="community-header">Community Lounge</h1>
         <br/>
         <p>Create an account through your CometChat dashboard or login with one of our test users, superhero1, superhero2, etc.</p>
