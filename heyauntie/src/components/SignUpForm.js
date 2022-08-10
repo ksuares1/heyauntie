@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import Toolbar from './Navbar';
 import {database} from './Firebase';
 import {ref,push,child,update} from "firebase/database";
-
+import TermsConditions from './Terms-Conditions';
 
 
 
@@ -82,12 +82,15 @@ function RegistrationForm() {
                     <input className="form__input" type="password" id="confirmPassword" value={confirmPassword} onChange = {(e) => handleInputChange(e)} placeholder="Confirm Password"/>
                 </div>
             </div>
+           
             <br/>
             <div class="footer">
                 <a href="/dashboard">
+                <TermsConditions/>
                 <button onClick={()=>handleSubmit()} type="submit" class="register-btn">Register</button>
                 </a>
             </div>
+
         </div>
         </div>
        
