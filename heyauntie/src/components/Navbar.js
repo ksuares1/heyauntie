@@ -1,9 +1,7 @@
-import Button from 'react-bootstrap/Button';
+
 import Container from 'react-bootstrap/Container';
-// import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
 function Toolbar() {
@@ -35,16 +33,7 @@ function Toolbar() {
                   <Nav.Link href="/aunteechat">Auntee Messages</Nav.Link>
                   <Nav.Link href="/profilemain">Donate</Nav.Link>
                   
-                  <NavDropdown
-                    title="Comunity Lounge"
-                    id={`offcanvasNavbarDropdown-expand-${expand}`}
-                  >
-                    <NavDropdown.Item href="#action5">
-                      Text goes here
-                    </NavDropdown.Item>
-                  </NavDropdown>
-                </Nav>
-                  <Button variant="outline-success">Search</Button>
+                 </Nav>
               
               </Offcanvas.Body>
             </Navbar.Offcanvas>
