@@ -299,6 +299,13 @@ auntee-pic{
   font-size:18px;
 }
 
+
+
+.terms-btn{
+  color:white;
+  font-family: Bely;
+}
+
 @media screen and (max-width: 550px) {
   .loginBox {
     width: 85%;

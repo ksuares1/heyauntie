@@ -27,11 +27,9 @@ function Toolbar() {
                   <Nav.Link href="/">Home</Nav.Link>
                   <Nav.Link href="/login">Login </Nav.Link>
                   <Nav.Link href="/registrationform">Sign Up </Nav.Link>
-                  <Nav.Link href="/profilemain">Profile</Nav.Link>
                   <Nav.Link href="/communitylounge">Community Lounge</Nav.Link>
                   <Nav.Link href="/dashboard">Dashboard</Nav.Link>
-                  <Nav.Link href="/aunteechat">Auntee Messages</Nav.Link>
-                  <Nav.Link href="/profilemain">Donate</Nav.Link>
+                  {/* <Nav.Link href="/profilemain">Donate</Nav.Link> */}
                   
                  </Nav>
               

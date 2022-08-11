@@ -13,7 +13,7 @@ const TermsModal=() =>{
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
+      <Button class="terms-btn" variant="primary" onClick={handleShow}>
         Terms & Conditions
       </Button>
 
