@@ -1,3 +1,4 @@
+import TermsModal from '../components/Modal';
 import React, { useState } from 'react';
 
 
@@ -21,14 +22,16 @@ const TermsConditions= () => {
       <div className="container">
         <div>
           <input type="checkbox" id="agree" onChange={checkboxHandler} />
-          <label htmlFor="agree"> I agree to <b>terms and conditions</b></label>
-        </div>
-
+          <label htmlFor="agree"> I agree to these <a href="#/"><b>terms and conditions</b></a></label>
+        <>
+        <TermsModal/>
+        </>
         {/* Don't miss the exclamation mark* */}
         <button disabled={!agree} className="btn" onClick={btnHandler}>
-          Continue
+        
         </button>
       </div>
+    </div>
     </div>
   );
 };

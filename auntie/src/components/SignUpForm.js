@@ -81,12 +81,17 @@ function RegistrationForm() {
                     <label className="form__label" for="confirmPassword">Confirm Password: </label>
                     <input className="form__input" type="password" id="confirmPassword" value={confirmPassword} onChange = {(e) => handleInputChange(e)} placeholder="Confirm Password"/>
                 </div>
+                <div>
+                    <br/>
+                <TermsConditions/>
+                </div>
+            
             </div>
            
             <br/>
             <div class="footer">
                 <a href="/dashboard">
-                <TermsConditions/>
+           
                 <button onClick={()=>handleSubmit()} type="submit" class="register-btn">Register</button>
                 </a>
             </div>
