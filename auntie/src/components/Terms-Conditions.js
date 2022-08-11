@@ -23,9 +23,14 @@ const TermsConditions= () => {
         <div>
           <input type="checkbox" id="agree" onChange={checkboxHandler} />
           <label htmlFor="agree"> I agree to these <a href="#/"><b>terms and conditions</b></a></label>
-        <>
+         
+          <br/>
+          <div>
+            {/* Modal for Terms and Conditions */}
         <TermsModal/>
-        </>
+        </div>
+
+        
         {/* Don't miss the exclamation mark* */}
         <button disabled={!agree} className="btn" onClick={btnHandler}>
         

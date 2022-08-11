@@ -14,20 +14,20 @@ const TermsModal=() =>{
   return (
     <>
       <Button variant="primary" onClick={handleShow}>
-        Launch demo modal
+        Terms & Conditions
       </Button>
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
+          <Modal.Title>Terms and Conditions</Modal.Title>
         </Modal.Header>
         <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
-            Close
+            Decline
           </Button>
           <Button variant="primary" onClick={handleClose}>
-            Save Changes
+           Accept
           </Button>
         </Modal.Footer>
       </Modal>
