@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/heyauntie/static/css/main.5e55a971.css",
-    "main.js": "/heyauntie/static/js/main.e6dcaecf.js",
+    "main.js": "/heyauntie/static/js/main.6ce625b5.js",
     "static/js/906.8d6ef28b.chunk.js": "/heyauntie/static/js/906.8d6ef28b.chunk.js",
     "static/js/515.08eae1e0.chunk.js": "/heyauntie/static/js/515.08eae1e0.chunk.js",
     "static/js/421.7fc8e115.chunk.js": "/heyauntie/static/js/421.7fc8e115.chunk.js",
@@ -82,11 +82,11 @@
     "static/media/done.svg": "/heyauntie/static/media/done.bf5ee0ccad51e80a9c3032e5d79191da.svg",
     "static/media/message-sent.svg": "/heyauntie/static/media/message-sent.bf5ee0ccad51e80a9c3032e5d79191da.svg",
     "main.5e55a971.css.map": "/heyauntie/static/css/main.5e55a971.css.map",
-    "main.e6dcaecf.js.map": "/heyauntie/static/js/main.e6dcaecf.js.map",
+    "main.6ce625b5.js.map": "/heyauntie/static/js/main.6ce625b5.js.map",
     "787.643acd73.chunk.js.map": "/heyauntie/static/js/787.643acd73.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5e55a971.css",
-    "static/js/main.e6dcaecf.js"
+    "static/js/main.6ce625b5.js"
   ]
 }
