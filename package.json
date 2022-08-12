@@ -2,6 +2,9 @@
   "name": "heyauntie",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "^16.15.0"
+  },
   "homepage": "https://ksuares1.github.io/heyauntie",
   "dependencies": {
     "@cometchat-pro/chat": "^3.0.10",
