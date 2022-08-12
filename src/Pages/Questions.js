@@ -1,6 +1,8 @@
+import Survey from '../components/Survey';
+
 const Questions=() =>{
     return(
-        <div>
+        <div><Survey />
             </div>
     )
 }
