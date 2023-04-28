@@ -3,6 +3,7 @@
 An interactive chat app for teens to ask women questions and for advice. 
 
 
+![auntie-ladies](https://user-images.githubusercontent.com/44280043/235229650-731f4438-cc0e-4da9-b0a6-53d5e7af4205.png)
 
 
 # Getting Started with Create React App
