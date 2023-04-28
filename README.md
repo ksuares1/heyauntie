@@ -5,11 +5,17 @@ An interactive chat app for teens to ask women questions and advice.
 
 ![auntie-ladies](https://user-images.githubusercontent.com/44280043/235229650-731f4438-cc0e-4da9-b0a6-53d5e7af4205.png)
 
+#Built With
 
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+A little intro about the installation. 
+```
+$ git clone https://https://github.com/ksuares1/heyauntie/
+$ cd heayuntie
+$ npx create-react-app my-app
+$ cd my-app
+$ npm start
+```
 
 ### `npm start`
 
