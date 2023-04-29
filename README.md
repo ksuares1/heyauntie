@@ -16,8 +16,9 @@ An interactive chat app for teens to ask women questions and advice.
 * Axios/Ajax
 * HTML5
 * CSS
-
-A little intro about the installation. 
+* 
+# Installation  
+In order to install this application do the following: 
 ```
 $ git clone https://https://github.com/ksuares1/heyauntie/
 $ cd heayuntie
