@@ -18,7 +18,7 @@ An interactive chat app for teens to ask women questions and advice.
 * CSS
 * 
 # Installation  
-In order to install this application do the following: 
+In order to install this application please do the following: 
 ```
 $ git clone https://https://github.com/ksuares1/heyauntie/
 $ cd heayuntie
