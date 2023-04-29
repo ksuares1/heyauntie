@@ -16,7 +16,7 @@ An interactive chat app for teens to ask women questions and advice.
 * Axios/Ajax
 * HTML5
 * CSS
-* 
+
 # Installation  
 In order to install this application please do the following: 
 ```
